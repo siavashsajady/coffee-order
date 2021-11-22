@@ -1,0 +1,41 @@
+[debug] [2021-11-22T15:39:33.157Z] ----------------------------------------------------------------------
+[debug] [2021-11-22T15:39:33.161Z] Command:       F:\Program Files\nodejs\node.exe C:\Users\pars\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-11-22T15:39:33.162Z] CLI Version:   9.23.0
+[debug] [2021-11-22T15:39:33.162Z] Platform:      win32
+[debug] [2021-11-22T15:39:33.163Z] Node Version:  v14.17.3
+[debug] [2021-11-22T15:39:33.164Z] Time:          Mon Nov 22 2021 16:39:33 GMT+0100 (Central European Standard Time)
+[debug] [2021-11-22T15:39:33.165Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-22T15:39:33.169Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-11-22T15:39:33.213Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-22T15:39:33.213Z] > authorizing via signed-in user (siavash.sajjady@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\pars\Desktop\react\coffeeorder
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-11-22T15:39:45.474Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-11-22T15:39:46.034Z] Failed to make request: Unexpected token < in JSON at position 0
+[debug] [2021-11-22T15:39:46.621Z] FirebaseError: Failed to make request: Unexpected token < in JSON at position 0
+    at Client.request (C:\Users\pars\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:109:19)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async getProjectPage (C:\Users\pars\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:233:17)
+    at async getFirebaseProjectPage (C:\Users\pars\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:250:23)
+    at async selectProjectInteractively (C:\Users\pars\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:95:41)
+    at async Object.doSetup [as project] (C:\Users\pars\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:87:27)
+    at async init (C:\Users\pars\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
